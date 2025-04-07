@@ -56,7 +56,7 @@ dimensionality = 'pca'; %'pca' for performing dimensionality reduction of the in
 for i = 1:length(groups)
     group_name = groups{i}; % name of the group
     
-    path = join([pathResults, group_name, '_FDT_results_Tau2_nofiltfilt_goodCOVfit_GOOD.mat']); % path to the data of the group
+    path = join([pathResults, group_name, '_FDT_results_Tau2_nofiltfilt.mat']); % path to the data of the group
     load(path) % load the data   
 
     FDTvarname = sprintf('perFDT_subjects%d', i);
